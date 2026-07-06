@@ -1,0 +1,101 @@
+ProductID,ProductName,Category,SubCategory,Brand,UnitCost,SellingPrice,ReorderPoint,LeadTimeDays,Status
+PRD000001,Apple 4K UHD Monitor,Electronics,Monitor,Apple,10248092,12538156,10,12,Active
+PRD000002,Informa 5-Tier Bookshelf,Furniture,Bookshelf,Informa,3990353,5001859,10,34,Active
+PRD000003,Paperline Gel 0.5mm Pen,Office Supplies,Pen,Paperline,88990,112640,69,3,Active
+PRD000004,IKEA Compact Bookshelf,Furniture,Bookshelf,IKEA,1186091,1461368,4,34,Active
+PRD000005,Apple Wireless Keyboard,Electronics,Keyboard,Apple,2824044,3410818,17,18,Active
+PRD000006,Kenko A5 Hardcover Notebook,Office Supplies,Notebook,Kenko,14238,18514,142,7,Active
+PRD000007,Informa Mesh Office Chair,Furniture,Office Chair,Informa,3721509,4601628,7,32,Active
+PRD000008,Mi Mechanical Keyboard,Electronics,Keyboard,Mi,5393673,6721126,12,14,Active
+PRD000009,Mi Pro Laptop,Electronics,Laptop,Mi,689521,762426,18,12,Active
+PRD000010,Mi Gaming Laptop,Electronics,Laptop,Mi,14208776,16322318,19,14,Active
+PRD000011,Kenko Plastic L-Shape Folder,Office Supplies,Folder,Kenko,19179,22928,81,4,Active
+PRD000012,Logitech Gaming Monitor,Electronics,Monitor,Logitech,8515843,9892515,15,17,Active
+PRD000013,Ace Conference Meeting Table,Furniture,Meeting Table,Ace,6813789,8797740,10,27,Active
+PRD000014,Paperline Highlighter Pastel Marker,Office Supplies,Marker,Paperline,66402,82494,99,3,Active
+PRD000015,Logitech Wireless Keyboard,Electronics,Keyboard,Logitech,10490961,11736276,20,14,Active
+PRD000016,Olympic Modern Bookshelf,Furniture,Bookshelf,Olympic,4207677,5579696,12,31,Active
+PRD000017,Samsung Bluetooth Waterproof Speaker,Electronics,Speaker,Samsung,9827989,11925039,10,14,Active
+PRD000018,Ace Large Meeting Table,Furniture,Meeting Table,Ace,6997317,9055707,4,19,Active
+PRD000019,Logitech Wireless Mouse,Electronics,Mouse,Logitech,10443690,12334116,5,9,Active
+PRD000020,Logitech 4K UHD Monitor,Electronics,Monitor,Logitech,8868678,10875984,18,19,Active
+PRD000021,Apple Mechanical Keyboard,Electronics,Keyboard,Apple,4195547,4654628,7,18,Discontinued
+PRD000022,Paperline Heavy Duty Stapler,Office Supplies,Stapler,Paperline,11440,13171,177,2,Active
+PRD000023,Ace Minimalist Office Desk,Furniture,Office Desk,Ace,4562704,5930251,7,15,Active
+PRD000024,Apple 4K UHD Monitor,Electronics,Monitor,Apple,5952095,7036986,12,18,Active
+PRD000025,Samsung Wireless Keyboard,Electronics,Keyboard,Samsung,11757614,14668868,8,21,Active
+PRD000026,Paperline Ring Binder Folder,Office Supplies,Folder,Paperline,82813,111584,62,4,Active
+PRD000027,Paperline Spiral Linier Notebook,Office Supplies,Notebook,Paperline,33110,42569,69,5,Active
+PRD000028,Kenko Grid Bulanan Notebook,Office Supplies,Notebook,Kenko,65267,83344,99,3,Active
+PRD000029,Kenko Paperless Stapler,Office Supplies,Stapler,Kenko,19151,22747,117,7,Active
+PRD000030,IKEA Modern Bookshelf,Furniture,Bookshelf,IKEA,6789713,8810625,5,35,Active
+PRD000031,Logitech Curved Monitor,Electronics,Monitor,Logitech,12552045,14728834,14,8,Active
+PRD000032,Paperline Mini Stapler,Office Supplies,Stapler,Paperline,45959,56229,200,4,Active
+PRD000033,Kenko Heavy Duty Stapler,Office Supplies,Stapler,Kenko,24214,29875,189,7,Active
+PRD000034,Mi Silent Mouse,Electronics,Mouse,Mi,5877861,6470632,10,18,Active
+PRD000035,Mi Ergonomic Keyboard,Electronics,Keyboard,Mi,10868193,13565337,16,9,Active
+PRD000036,Joyko Heavy Duty Stapler,Office Supplies,Stapler,Joyko,98504,128895,164,2,Active
+PRD000037,Apple Wireless Mouse,Electronics,Mouse,Apple,8015129,9457605,7,10,Active
+PRD000038,Samsung Ergonomic Keyboard,Electronics,Keyboard,Samsung,9818880,11787213,12,17,Active
+PRD000039,Joyko Mini Stapler,Office Supplies,Stapler,Joyko,44700,51741,64,4,Active
+PRD000040,Apple Bass Booster Speaker,Electronics,Speaker,Apple,8071776,9089334,5,12,Active
+PRD000041,Joyko Gel 0.5mm Pen,Office Supplies,Pen,Joyko,84011,111315,182,3,Active
+PRD000042,Logitech Wireless Keyboard,Electronics,Keyboard,Logitech,13951806,15714379,13,18,Active
+PRD000043,Mi Pro Laptop,Electronics,Laptop,Mi,9974338,11766195,12,9,Active
+PRD000044,Mi Pro Laptop,Electronics,Laptop,Mi,8164386,9066816,19,13,Active
+PRD000045,Samsung Gaming Monitor,Electronics,Monitor,Samsung,825782,953998,17,11,Active
+PRD000046,Kenko Spiral Linier Notebook,Office Supplies,Notebook,Kenko,67310,81931,150,6,Active
+PRD000047,Mi Bass Booster Speaker,Electronics,Speaker,Mi,13614967,15893317,20,18,Active
+PRD000048,Kenko Highlighter Pastel Marker,Office Supplies,Marker,Kenko,70772,86962,115,4,Active
+PRD000049,Mi Gaming Monitor,Electronics,Monitor,Mi,1943985,2170146,6,16,Active
+PRD000050,Apple Pro Laptop,Electronics,Laptop,Apple,3663876,4300562,9,15,Active
+PRD000051,Samsung Wireless Mouse,Electronics,Mouse,Samsung,7954923,9432725,6,7,Active
+PRD000052,Apple Wireless Mouse,Electronics,Mouse,Apple,10311665,12686737,17,15,Active
+PRD000053,Logitech Soundbar Speaker,Electronics,Speaker,Logitech,7827597,9199236,15,13,Active
+PRD000054,Samsung Ultra Slim Laptop,Electronics,Laptop,Samsung,7561969,9405376,12,17,Active
+PRD000055,Samsung Ergonomic Keyboard,Electronics,Keyboard,Samsung,9129827,10212551,11,15,Active
+PRD000056,IKEA Round Meeting Table,Furniture,Meeting Table,IKEA,5010015,6576976,8,16,Active
+PRD000057,Olympic Compact Bookshelf,Furniture,Bookshelf,Olympic,2258806,2873348,9,21,Active
+PRD000058,Apple RGB Ergonomic Mouse,Electronics,Mouse,Apple,14237180,16387967,13,10,Active
+PRD000059,Kenko A5 Hardcover Notebook,Office Supplies,Notebook,Kenko,32341,42846,174,6,Active
+PRD000060,Kenko Permanent Marker,Office Supplies,Marker,Kenko,20201,24922,58,4,Active
+PRD000061,Ace Ergonomic Office Chair,Furniture,Office Chair,Ace,6308158,7771700,7,21,Active
+PRD000062,Samsung Gaming Laptop,Electronics,Laptop,Samsung,13520485,15638385,17,10,Active
+PRD000063,Samsung Bass Booster Speaker,Electronics,Speaker,Samsung,10231872,12006337,14,8,Active
+PRD000064,Mi RGB Ergonomic Mouse,Electronics,Mouse,Mi,7459817,8433800,11,9,Active
+PRD000065,Logitech Silent Mouse,Electronics,Mouse,Logitech,8720364,9873763,10,14,Active
+PRD000066,Paperline Spiral Linier Notebook,Office Supplies,Notebook,Paperline,63866,74290,132,6,Active
+PRD000067,Samsung Wireless Mouse,Electronics,Mouse,Samsung,7206004,8388982,14,8,Active
+PRD000068,Apple Wireless Keyboard,Electronics,Keyboard,Apple,7591857,9467042,12,11,Active
+PRD000069,Ace Sliding Cabinet,Furniture,Cabinet,Ace,4333681,5357037,12,33,Active
+PRD000070,Informa Compact Bookshelf,Furniture,Bookshelf,Informa,6363942,8536489,7,33,Active
+PRD000071,Samsung RGB Ergonomic Mouse,Electronics,Mouse,Samsung,5569233,6825957,9,14,Active
+PRD000072,Ace Wood Cabinet,Furniture,Cabinet,Ace,5650301,7043886,8,29,Active
+PRD000073,Informa Metal Cabinet,Furniture,Cabinet,Informa,1982945,2493855,5,19,Active
+PRD000074,Ace Conference Meeting Table,Furniture,Meeting Table,Ace,1725814,2165505,5,33,Active
+PRD000075,Ace Wood Cabinet,Furniture,Cabinet,Ace,3667284,4597737,4,32,Active
+PRD000076,Mi Ultra Slim Laptop,Electronics,Laptop,Mi,9225796,10962602,9,12,Active
+PRD000077,Joyko Mini Stapler,Office Supplies,Stapler,Joyko,39450,49768,91,7,Active
+PRD000078,Joyko A5 Hardcover Notebook,Office Supplies,Notebook,Joyko,32865,38897,113,3,Active
+PRD000079,Ace 5-Tier Bookshelf,Furniture,Bookshelf,Ace,2553345,3209861,5,14,Active
+PRD000080,Joyko Mini Stapler,Office Supplies,Stapler,Joyko,9049,11031,91,7,Active
+PRD000081,Olympic Wood Cabinet,Furniture,Cabinet,Olympic,1091754,1468891,11,16,Active
+PRD000082,Mi Bluetooth Waterproof Speaker,Electronics,Speaker,Mi,14350593,16131950,12,11,Active
+PRD000083,Logitech Ultra Slim Laptop,Electronics,Laptop,Logitech,6849673,8171803,10,20,Active
+PRD000084,Mi Gaming Laptop,Electronics,Laptop,Mi,1846775,2270556,10,9,Active
+PRD000085,Joyko Whiteboard Marker,Office Supplies,Marker,Joyko,29657,35533,153,4,Active
+PRD000086,Olympic Executive Office Chair,Furniture,Office Chair,Olympic,1795277,2274507,10,26,Active
+PRD000087,Joyko Stylus 2-in-1 Pen,Office Supplies,Pen,Joyko,92534,107252,198,7,Active
+PRD000088,Ace Compact Bookshelf,Furniture,Bookshelf,Ace,3934749,4904710,5,33,Active
+PRD000089,Samsung Ultra Slim Laptop,Electronics,Laptop,Samsung,7077238,8529536,12,10,Active
+PRD000090,Joyko Ring Binder Folder,Office Supplies,Folder,Joyko,19246,23226,184,2,Active
+PRD000091,Olympic Minimalist Office Desk,Furniture,Office Desk,Olympic,836856,1019944,3,32,Active
+PRD000092,Olympic Wood Cabinet,Furniture,Cabinet,Olympic,5287741,6990591,10,21,Active
+PRD000093,Kenko Plastic L-Shape Folder,Office Supplies,Folder,Kenko,43565,52455,59,3,Active
+PRD000094,Informa Modern Bookshelf,Furniture,Bookshelf,Informa,1824570,2276619,9,22,Active
+PRD000095,Mi Pro Laptop,Electronics,Laptop,Mi,7876119,9695214,16,18,Active
+PRD000096,Logitech 4K UHD Monitor,Electronics,Monitor,Logitech,10723162,12785604,17,18,Active
+PRD000097,Samsung Ultra Slim Laptop,Electronics,Laptop,Samsung,3187069,3588215,17,19,Discontinued
+PRD000098,Logitech Ultra Slim Laptop,Electronics,Laptop,Logitech,2234825,2605561,15,17,Active
+PRD000099,Paperline Whiteboard Marker,Office Supplies,Marker,Paperline,58703,68850,136,4,Active
+PRD000100,IKEA Standing Office Desk,Furniture,Office Desk,IKEA,2798428,3330998,8,33,Active

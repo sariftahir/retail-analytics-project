@@ -1,0 +1,17 @@
+PromotionID,PromotionName,PromoType,DiscountValue,MinimumSpend,MaximumDiscount,StartDate,EndDate,Status,Channel,CustomerSegment
+PRM0001,Double Deal,Buy 1 Get 1,,100000.0,,2026-01-12,2026-01-18,Expired,All Channels,New Customers
+PRM0002,Midnight Deals 20%,Percentage Discount,0.2,100000.0,100000.0,2026-07-16,2026-08-14,Upcoming,All Channels,New Customers
+PRM0003,Payday Sale 5%,Percentage Discount,0.05,500000.0,25000.0,2026-05-27,2026-06-21,Expired,All Channels,All Customers
+PRM0004,National Free Shipping,Free Shipping,,100000.0,,2026-09-11,2026-09-22,Upcoming,Mobile App,All Customers
+PRM0005,Flash Sale 15%,Percentage Discount,0.15,500000.0,75000.0,2026-04-26,2026-05-06,Expired,All Channels,All Customers
+PRM0006,Special Cashback Rp50K,Fixed Cashback,50000.0,300000.0,50000.0,2026-05-11,2026-05-23,Expired,Mobile App,New Customers
+PRM0007,BOGO Special,Buy 1 Get 1,,100000.0,,2026-02-27,2026-03-10,Expired,Mobile App,All Customers
+PRM0008,Hot Deals 25%,Percentage Discount,0.25,500000.0,125000.0,2026-08-14,2026-09-01,Upcoming,All Channels,New Customers
+PRM0009,Mega Sale 25%,Percentage Discount,0.25,500000.0,125000.0,2026-03-25,2026-04-21,Expired,All Channels,VIP Members
+PRM0010,Midnight Deals 10%,Percentage Discount,0.1,200000.0,50000.0,2026-02-07,2026-02-23,Expired,All Channels,New Customers
+PRM0011,Weekend Sale 15%,Percentage Discount,0.15,300000.0,75000.0,2026-06-29,2026-07-24,Active,Mobile App,All Customers
+PRM0012,Flash Sale 10%,Percentage Discount,0.1,200000.0,50000.0,2026-03-03,2026-03-19,Expired,Website,All Customers
+PRM0013,Payday Sale 5%,Percentage Discount,0.05,500000.0,25000.0,2026-07-19,2026-08-17,Upcoming,All Channels,All Customers
+PRM0014,Special Cashback Rp50K,Fixed Cashback,50000.0,300000.0,50000.0,2026-06-15,2026-07-14,Active,Website,All Customers
+PRM0015,Mega Cashback Rp50K,Fixed Cashback,50000.0,350000.0,50000.0,2026-04-11,2026-04-18,Expired,All Channels,New Customers
+NOPRMO,No Promotion,None,,,,,,Active,All Channels,All Customers
