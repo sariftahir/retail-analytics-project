@@ -1,17 +1,4 @@
--- Query 1 (Sudah aman karena hanya menggunakan COUNT)
-SELECT
-    p.PromotionName,
-    p.PromoType,
-    COUNT(o.OrderID) AS TotalTransactions
-FROM Orders o
-JOIN Promotions p
-    ON o.PromotionID = p.PromotionID
-GROUP BY
-    p.PromotionName,
-    p.PromoType
-ORDER BY TotalTransactions DESC;
-
---Query 2 — Revenue per Promotion
+--Revenue by Promotion
 SELECT
     p.PromotionName,
     SUM(CAST(o.NetRevenue AS BIGINT)) AS TotalRevenue
@@ -22,7 +9,7 @@ GROUP BY
     p.PromotionName
 ORDER BY TotalRevenue DESC;
 
---Query 3 — Gross Revenue vs Net Revenue
+--Gross Revenue vs Net Revenue
 SELECT
     p.PromotionName,
     SUM(CAST(o.GrossRevenue AS BIGINT)) AS GrossRevenue,
@@ -35,7 +22,7 @@ GROUP BY
     p.PromotionName
 ORDER BY GrossRevenue DESC;
 
---Query 4 — Average Discount
+--Average Discount by Promotion
 SELECT
     p.PromotionName,
     AVG(CAST(o.DiscountApplied AS BIGINT)) AS AvgDiscount
@@ -46,7 +33,7 @@ GROUP BY
     p.PromotionName
 ORDER BY AvgDiscount DESC;
 
---Query 5 — Cashback vs Percentage
+--Cashback vs Percentage Discount Performance
 SELECT
     p.PromoType,
     COUNT(*) AS Transactions,
@@ -58,7 +45,7 @@ GROUP BY
     p.PromoType
 ORDER BY Revenue DESC;
 
---Query 6 — Promotion berdasarkan Channel
+--Promotion Performance by Channel
 SELECT
     p.Channel,
     SUM(CAST(o.NetRevenue AS BIGINT)) AS Revenue,
@@ -69,7 +56,7 @@ JOIN Promotions p
 GROUP BY
     p.Channel;
 
---Query 7 — Customer Segment yang paling banyak memakai promo
+--Customer Segment with the Highest Promotion Usage
 SELECT
     p.CustomerSegment,
     COUNT(*) AS Transactions,
@@ -81,7 +68,7 @@ GROUP BY
     p.CustomerSegment
 ORDER BY Transactions DESC;
 
---Query 8 — Promotion dengan Quantity terbesar (Ditambah CAST jika total Qty > 2 Miliar)
+--Promotion with the Highest Quantity Sold (Use CAST if Total Quantity > 2 Billion)
 SELECT
     p.PromotionName,
     SUM(CAST(o.Quantity AS BIGINT)) AS QuantitySold
@@ -92,7 +79,7 @@ GROUP BY
     p.PromotionName
 ORDER BY QuantitySold DESC;
 
---Query 9 — Average Order Value
+--Average Order Value by Promotion
 SELECT
     p.PromotionName,
     AVG(CAST(o.NetRevenue AS BIGINT)) AS AverageOrderValue
@@ -103,7 +90,7 @@ GROUP BY
     p.PromotionName
 ORDER BY AverageOrderValue DESC;
 
---Query 10 — Revenue berdasarkan Category dan Promotion
+--Revenue by Category and Promotion
 SELECT
     pr.Category,
     p.PromotionName,
@@ -118,7 +105,7 @@ GROUP BY
     p.PromotionName
 ORDER BY Revenue DESC;
 
---Query 11 — Revenue berdasarkan Brand dan Promotion
+--Revenue by Brand and Promotion
 SELECT
     pr.Brand,
     p.PromotionName,
@@ -133,7 +120,7 @@ GROUP BY
     p.PromotionName
 ORDER BY Revenue DESC;
 
---Query 12 — Revenue berdasarkan Bulan
+--Monthly Revenue by Promotion
 SELECT
     d.MonthName,
     p.PromotionName,
@@ -148,7 +135,7 @@ GROUP BY
     p.PromotionName
 ORDER BY Revenue DESC;
 
---Query 13 — Top 10 Promotion
+--Top 10 Promotions by Revenue
 SELECT TOP 10
     p.PromotionName,
     SUM(CAST(o.NetRevenue AS BIGINT)) AS Revenue
@@ -159,7 +146,7 @@ GROUP BY
     p.PromotionName
 ORDER BY Revenue DESC;
 
---Query 14 — Efektivitas Promotion
+--Promotion Effectiveness Analysis
 SELECT
     p.PromotionName,
     SUM(CAST(o.DiscountApplied AS BIGINT)) AS TotalDiscount,
@@ -172,7 +159,7 @@ GROUP BY
     p.PromotionName
 ORDER BY Profit DESC;
 
---Query 15 — Promotion Performance Summary
+--Promotion Performance Summary
 SELECT
     p.PromotionName,
     COUNT(*) AS Orders,
