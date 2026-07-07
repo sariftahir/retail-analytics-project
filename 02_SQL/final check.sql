@@ -1,3 +1,4 @@
+-- CHECK VIEWS
 SELECT TOP 3 * FROM vw_CustomerAnalysis
 SELECT TOP 3 * FROM vw_ExecutiveOverview
 SELECT TOP 3 * FROM vw_FactReturns
@@ -7,8 +8,7 @@ SELECT TOP 3 * FROM vw_ReturnAnalysis
 SELECT TOP 3 * FROM vw_SalesPerformance
 
 
-
---VALIDASI JUMLAH BARIS
+-- ROW COUNT VALIDATION
 SELECT 
 	COUNT(*) AS Orders 
 FROM Orders;
@@ -34,7 +34,7 @@ SELECT
 FROM vw_ExecutiveOverview;
 
 
---VALIDASI RETURN 
+-- RETURNS VALIDATION
 
 SELECT 
 	COUNT(*) AS Retur
@@ -48,17 +48,17 @@ SELECT
 	COUNT(*) AS ReturnAnalysis 
 FROM vw_ReturnAnalysis;	
 
---CEK NULL PROFIT
+-- CHECK NULL PROFIT
 SELECT *
 FROM vw_FactSales
 WHERE Profit IS NULL;
 
---CEK NULL NETREVENUE
+-- CHECK NULL NETREVENUE
 SELECT *
 FROM vw_FactSales
 WHERE NetRevenue IS NULL;
 
---CEK ORDER DUPLICATE	
+-- CHECK DUPLICATE ORDERS	
 SELECT
 OrderID,
 COUNT(*) AS Total
