@@ -1,8 +1,5 @@
 
-/*----------------------------------------------------------
-					DATA QUALITY CHECK
-----------------------------------------------------------*/
-
+--DATA QUALITY CHECK
 SELECT COUNT(*) FROM Customers;
 SELECT COUNT(*) FROM Products;
 SELECT COUNT(*) FROM Orders;
@@ -18,10 +15,8 @@ SELECT TOP 5 * FROM Promotions;
 SELECT TOP 5 * FROM Returns;
 SELECT TOP 5 * FROM Dates;
 
-/*--------------------------------------
-				CEK NULL
----------------------------------------*/
 
+--CEK NULL
 SELECT * FROM Customers
 WHERE CustomerID IS NULL;
 
@@ -40,11 +35,9 @@ WHERE DiscountValue IS NULL;
 
 SELECT * FROM Returns
 WHERE ReturnID IS NULL;
-	
 
-/*--------------------------------------
-		CEK DUPLICATE PRIMARY KEY
----------------------------------------*/
+
+--CEK DUPLICATE PRIMARY KEY
 
 --CUSTOMERS
 SELECT COUNT (*) AS TotalRows,		
@@ -72,9 +65,7 @@ SELECT COUNT (*) AS TotalRows,
 FROM Returns;
 
 
-/*--------------------------------------
-			CEK FOREIGN KEY
----------------------------------------*/
+--CEK FOREIGN KEY
 
 --CustomerID
 SELECT DISTINCT CustomerID
@@ -85,7 +76,6 @@ EXCEPT
 SELECT CustomerID
 FROM Customers;
 
-
 --ProductID
 SELECT DISTINCT ProductID
 FROM Orders
@@ -94,7 +84,6 @@ EXCEPT
 
 SELECT ProductID
 FROM Products;
-
 
 --PromotionID
 SELECT DISTINCT PromotionID
@@ -105,7 +94,6 @@ EXCEPT
 SELECT PromotionID
 FROM Promotions;
 
-
 --DateKey
 SELECT DISTINCT DateKey
 FROM Orders
@@ -114,7 +102,6 @@ EXCEPT
 
 SELECT DateKey
 FROM Dates;
-
 
 --OrderID --> Returns
 SELECT DISTINCT OrderID
@@ -125,7 +112,6 @@ EXCEPT
 SELECT OrderID
 FROM Orders;
 
-
 --ProductID --> Returns
 SELECT DISTINCT ProductID
 FROM Returns
@@ -134,7 +120,6 @@ EXCEPT
 
 SELECT ProductID
 FROM Products;
-
 
 --DateKey Returns
 SELECT DISTINCT DateKey
