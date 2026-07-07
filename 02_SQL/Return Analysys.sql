@@ -1,4 +1,4 @@
---Query 1 — Total Return per Product
+-- Total Return per Product
 SELECT
     p.ProductName,
     SUM(r.QuantityReturned) AS TotalReturned
@@ -10,7 +10,7 @@ GROUP BY
 ORDER BY TotalReturned DESC;
 
 
--- Query 2 — Return berdasarkan Category
+-- Return by Category
 SELECT
     p.Category,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -21,7 +21,7 @@ GROUP BY
     p.Category
 ORDER BY TotalReturned DESC;
 
--- Query 3 — Return berdasarkan Brand
+-- Return by Brand
 SELECT
     p.Brand,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -32,7 +32,7 @@ GROUP BY
     p.Brand
 ORDER BY TotalReturned DESC;
 
--- Query 4 — Return Reason paling banyak (Menggunakan COUNT, sudah aman bawaan)
+-- Most Return Reasons (Using COUNT, already safe by default)
 SELECT
     ReturnReason,
     COUNT(*) AS TotalCases
@@ -41,7 +41,7 @@ GROUP BY
     ReturnReason
 ORDER BY TotalCases DESC;
 
--- Query 5 — Return per Bulan
+-- Return per Month
 SELECT
     d.MonthName,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -53,7 +53,7 @@ GROUP BY
 ORDER BY
     MIN(d.MonthNumberOfYear);
 
--- Query 6 — Return per Tahun
+-- Return per Year
 SELECT
     d.CalendarYear,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -65,7 +65,7 @@ GROUP BY
 ORDER BY
     d.CalendarYear;
 
--- Query 7 — Return Rate per Product
+-- Return Rate per Product
 SELECT
     p.ProductName,
     SUM(CAST(o.Quantity AS BIGINT)) AS QuantitySold,
@@ -84,21 +84,21 @@ GROUP BY
 ORDER BY
     ReturnRate DESC;
 
--- Query 8 — Revenue yang Direturn
+-- Returned Revenue
 SELECT
     SUM(CAST(o.SellingPrice AS BIGINT) * CAST(r.QuantityReturned AS BIGINT)) AS ReturnedRevenue
 FROM Returns r
 JOIN Orders o
     ON r.OrderID = o.OrderID;
 
--- Query 9 — Cost dari Barang Return
+-- Cost of Returned Goods
 SELECT
     SUM(CAST(o.UnitCost AS BIGINT) * CAST(r.QuantityReturned AS BIGINT)) AS ReturnedCost
 FROM Returns r
 JOIN Orders o
     ON r.OrderID = o.OrderID;
 
--- Query 10 — Produk dengan Return Rate tertinggi
+-- Products with the Highest Return Rate
 SELECT TOP 10
     p.ProductName,
     ROUND(
@@ -115,7 +115,7 @@ GROUP BY
 ORDER BY
     ReturnRate DESC;
 
--- Query 11 — Return berdasarkan Promotion
+-- Return by Promotion
 SELECT
     pr.PromotionName,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -129,7 +129,7 @@ GROUP BY
 ORDER BY
     TotalReturned DESC;
 
--- Query 12 — Return berdasarkan Sales Channel
+-- Return by Sales Channel
 SELECT
     pr.Channel,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -141,7 +141,7 @@ JOIN Promotions pr
 GROUP BY
     pr.Channel;
 
--- Query 13 — Return berdasarkan Customer Segment
+-- Return by Customer Segment
 SELECT
     pr.CustomerSegment,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -155,7 +155,7 @@ GROUP BY
 ORDER BY
     TotalReturned DESC;
 
--- Query 14 — Return berdasarkan Weekend vs Weekday
+-- Return by Weekend vs Weekday
 SELECT
     d.IsWeekend,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalReturned
@@ -165,7 +165,7 @@ JOIN Dates d
 GROUP BY
     d.IsWeekend;
 
--- Query 15 — Return Performance Summary
+-- Return Performance Summary
 SELECT
     COUNT(DISTINCT r.ReturnID) AS TotalReturnTransactions,
     SUM(CAST(r.QuantityReturned AS BIGINT)) AS TotalQuantityReturned,
