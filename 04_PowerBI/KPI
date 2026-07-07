@@ -1,0 +1,32 @@
+--KPI
+
+Average Order Value = 
+DIVIDE(
+    [Total Revenue],
+    [Total Orders]
+)
+
+Gross Revenue = 
+SUM(vw_ExecutiveOverview[GrossRevenue])
+
+Profit Margin % = 
+DIVIDE(
+    [Total Profit],
+    [Total Revenue],
+    0
+)
+
+Total Cost = 
+SUM(vw_ExecutiveOverview[TotalCost])
+
+Total Customers = 
+DISTINCTCOUNT(vw_ExecutiveOverview[CustomerID])
+
+Total Orders = 
+DISTINCTCOUNT(vw_ExecutiveOverview[OrderID])
+
+Total Products = 
+DISTINCTCOUNT(vw_ExecutiveOverview[ProductID])
+
+Total Profit = 
+SUM(vw_ExecutiveOverview[Profit])
