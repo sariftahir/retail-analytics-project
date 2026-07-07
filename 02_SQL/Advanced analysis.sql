@@ -1,5 +1,4 @@
--- Bagian A — CTE (3 Query)
--- Query 1 — Total Revenue per Customer (CTE)
+-- Total Revenue per Customer (CTE)
 WITH CustomerRevenue AS
 (
     SELECT
@@ -12,8 +11,7 @@ SELECT *
 FROM CustomerRevenue
 ORDER BY TotalRevenue DESC;
 
--- Belajar membuat Common Table Expression.
--- Query 2 — Revenue per Category (CTE)
+--Revenue per Category (CTE)
 WITH CategoryRevenue AS
 (
     SELECT
@@ -29,7 +27,7 @@ SELECT *
 FROM CategoryRevenue
 ORDER BY Revenue DESC;
 
--- Query 3 — Monthly Sales (CTE)
+-- Monthly Sales (CTE)
 WITH MonthlySales AS
 (
     SELECT
@@ -51,7 +49,6 @@ ORDER BY
     CalendarYear,
     MonthNumberOfYear;
 
--- Bagian B — ROW_NUMBER()
 -- Query 4 — Ranking transaksi terbesar
 SELECT
     OrderID,
@@ -71,8 +68,8 @@ SELECT
     ) AS Ranking
 FROM Products;
 
--- Bagian C — RANK()
--- Query 6
+ -- RANK()
+
 SELECT
     CustomerID,
     SUM(CAST(NetRevenue AS BIGINT)) AS Revenue,
@@ -83,8 +80,7 @@ SELECT
 FROM Orders
 GROUP BY CustomerID;
 
--- Bagian D — DENSE_RANK()
--- Query 7
+-- DENSE_RANK()
 SELECT
     ProductID,
     SUM(CAST(Quantity AS BIGINT)) AS Qty,
@@ -95,8 +91,7 @@ SELECT
 FROM Orders
 GROUP BY ProductID;
 
--- Bagian E — NTILE()
--- Query 8
+-- NTILE()
 SELECT
     CustomerID,
     SUM(CAST(NetRevenue AS BIGINT)) AS Revenue,
@@ -107,8 +102,7 @@ SELECT
 FROM Orders
 GROUP BY CustomerID;
 
--- Bagian F — LAG()
--- Query 9
+-- LAG()
 WITH MonthlyRevenue AS
 (
     SELECT
@@ -129,8 +123,7 @@ SELECT *,
     ) AS PreviousRevenue
 FROM MonthlyRevenue;
 
--- Bagian G — LEAD()
--- Query 10
+-- LEAD()
 WITH MonthlyRevenue AS
 (
     SELECT
@@ -151,8 +144,7 @@ SELECT *,
     ) AS NextRevenue
 FROM MonthlyRevenue;
 
--- Bagian H — Running Total
--- Query 11
+ -- Running Total
 WITH MonthlyRevenue AS
 (
     SELECT
@@ -173,8 +165,7 @@ SELECT *,
     ) AS RunningRevenue
 FROM MonthlyRevenue;
 
--- Bagian I — Moving Average
--- Query 12
+-- Moving Average
 WITH MonthlyRevenue AS
 (
     SELECT
@@ -196,8 +187,7 @@ SELECT *,
     ) AS MovingAverage
 FROM MonthlyRevenue;
 
--- Bagian J — Multi CTE
--- Query 13
+-- Multi CTE
 WITH Revenue AS
 (
     SELECT CustomerID, SUM(CAST(NetRevenue AS BIGINT)) AS Revenue
@@ -218,8 +208,7 @@ FROM Revenue r
 JOIN OrdersCount o
     ON r.CustomerID = o.CustomerID;
 
--- Bagian K — CASE + Window
--- Query 14
+--  CASE + Window
 SELECT
     CustomerID,
     SUM(CAST(NetRevenue AS BIGINT)) AS Revenue,
@@ -232,8 +221,7 @@ FROM Orders
 GROUP BY CustomerID
 ORDER BY Revenue DESC;
 
--- Bagian L — Top N Analysis
--- Query 15
+--  Top N Analysis
 WITH ProductSales AS
 (
     SELECT
@@ -246,8 +234,7 @@ SELECT TOP 10 *
 FROM ProductSales
 ORDER BY Revenue DESC;
 
--- Bagian M — Bottom N Analysis
--- Query 16
+--  Bottom N Analysis
 WITH ProductSales AS
 (
     SELECT
@@ -260,8 +247,7 @@ SELECT TOP 10 *
 FROM ProductSales
 ORDER BY Revenue;
 
--- Bagian N — Revenue Contribution
--- Query 17
+--  Revenue Contribution
 WITH CategoryRevenue AS
 (
     SELECT
@@ -281,8 +267,7 @@ SELECT
     ) AS ContributionPercent
 FROM CategoryRevenue;
 
--- Bagian O — Customer Lifetime Value (CLV)
--- Query 18
+--  Customer Lifetime Value (CLV)
 SELECT
     CustomerID,
     COUNT(OrderID) AS TotalOrders,
@@ -292,8 +277,7 @@ FROM Orders
 GROUP BY CustomerID
 ORDER BY LifetimeRevenue DESC;
 
--- Bagian P — Pareto Analysis (80/20)
--- Query 19
+-- Pareto Analysis (80/20)
 WITH ProductRevenue AS
 (
     SELECT
@@ -309,8 +293,7 @@ SELECT
 FROM ProductRevenue
 ORDER BY Revenue DESC;
 
--- Bagian Q — Customer Recency
--- Query 20
+--  Customer Recency
 SELECT
     CustomerID,
     MAX(DateKey) AS LastPurchaseDate
