@@ -1,0 +1,6 @@
+SELECT TOP 1 * FROM Customers
+SELECT TOP 1 * FROM Dates
+SELECT TOP 1 * FROM Orders
+SELECT TOP 1 * FROM Products
+SELECT TOP 1 * FROM Promotions
+SELECT TOP 1 * FROM Returns
