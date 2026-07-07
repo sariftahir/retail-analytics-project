@@ -30,3 +30,9 @@ DISTINCTCOUNT(vw_ExecutiveOverview[ProductID])
 
 Total Profit = 
 SUM(vw_ExecutiveOverview[Profit])
+
+Total Quantity = 
+SUM(vw_ExecutiveOverview[Quantity])
+
+Total Revenue = 
+SUM(vw_ExecutiveOverview[NetRevenue])
